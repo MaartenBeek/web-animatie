@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    margin: 6em 2em;
+}
+
+svg {
+    margin: auto;
+    display: block;
+}
+
+h2 {
+    color: white;
+    text-transform:uppercase;
+    position: absolute;
+    bottom: 4em;
+    left: 4em;
+}
+
+svg {
+    width: 40%;
+    transition: ease 1s;
+}
+
+svg:hover {
+/*
+    transform: scale(1.5);
+    transform: rotate(360deg);
+*/
+}
+
+#amerikaanse_vis {
+    animation-name: swimright;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes swimright {
+    0% {
+        margin-right: 0px;
+    }
+    100% {
+        margin-right: 400px;
+    }
+}
