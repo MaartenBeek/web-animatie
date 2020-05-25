@@ -22,6 +22,9 @@ section {
 svg {
     margin: auto;
     display: block;
+    overflow: visible;
+    width: 40%;
+    transition: ease 1s;
 }
 
 h2 {
@@ -30,11 +33,11 @@ h2 {
     position: absolute;
     bottom: 4em;
     left: 4em;
+    transition: ease 1s;
 }
 
-svg {
-    width: 40%;
-    transition: ease 1s;
+h2 span {
+    font-weight: 100;
 }
 
 svg:hover {
@@ -44,17 +47,213 @@ svg:hover {
 */
 }
 
-#amerikaanse_vis {
-    animation-name: swimright;
-    animation-duration: 2s;
+#amerikaanse_vis:hover {
+    animation-name: rotatejapan;
+    animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
 }
 
-@keyframes swimright {
-    0% {
-        margin-right: 0px;
+@keyframes rotatejapan {
+    0%{
+        transform: scale(1);
     }
-    100% {
-        margin-right: 400px;
+    50% {
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
     }
 }
+
+#amerikaanse_vis:hover .cls-6 {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    fill: white;
+    transition: ease 1s;
+}
+
+#amerikaanse_vis:hover #lichaam .cls-5 {
+    fill: white;
+    transition: ease 1s;
+}
+
+#amerikaanse_vis:hover #oog circle {
+    fill: #d33541;
+    transition: ease 0.5s;
+}
+
+#amerikaanse_vis:hover #oog {
+    fill: #d33541;
+    transition: ease 0.5s;
+}
+
+#amerikaanse_vis {
+    transition: ease-in;
+    animation-name: swiminright;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes swiminright {
+    0% {
+        transform: translateX(1400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#japans_visje_1, #japans_visje_2, #japans_visje_3, #japans_visje_4, #japans_visje_5, #japans_visje_6, #japans_visje_7, #japans_visje_8, #japans_visje_9, #japans_visje_10, #japans_visje_11, #japans_visje_12, #japans_visje_13, #japans_visje_14 {
+    transition: ease-in;
+    animation-name: swiminright ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+#japans_visje_1 {
+    animation-duration: 2.5s;
+}
+
+#japans_visje_2 {
+    animation-duration: 2.6s;
+}
+
+#japans_visje_3 {
+    animation-duration: 2.7s;
+}
+
+#japans_visje_4 {
+    animation-duration: 2.8s;
+}
+
+#japans_visje_5 {
+    animation-duration: 2.9s;
+}
+
+#japans_visje_6 {
+    animation-duration: 3s;
+}
+
+#japans_visje_7 {
+    animation-duration: 3.1s;
+}
+
+#japans_visje_8 {
+    animation-duration: 3.2s;
+}
+
+#japans_visje_9 {
+    animation-duration: 3.3s;
+}
+
+#japans_visje_10 {
+    animation-duration: 3.4s;
+}
+
+#japans_visje_11 {
+    animation-duration: 3.5s;
+}
+
+#japans_visje_12 {
+    animation-duration: 3.6s;
+}
+
+#japans_visje_13 {
+    animation-duration: 3.7s;
+}
+
+#japans_visje_14 {
+    animation-duration: 3.8s;
+}
+
+#chinese_vis_1, #chinese_vis_2 {
+    transition: ease-in;
+    animation-name: swiminleft;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes swiminleft {
+    0% {
+        transform: translateX(-1400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#chinese_vis_1 {
+    animation-duration: 3s;
+}
+
+#chinese_vis_2 {
+    animation-duration: 2.5s;
+}
+
+#japans_visje_1:active, #japans_visje_2:active, #japans_visje_3:active, #japans_visje_4:active, #japans_visje_5:active, #japans_visje_6:active, #japans_visje_7:active, #japans_visje_8:active, #japans_visje_9:active, #japans_visje_10:active, #japans_visje_11:active, #japans_visje_12:active, #japans_visje_13:active, #japans_visje_14:active {
+    animation-name: pop;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    98%{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#japans_visje_1:active polygon, #japans_visje_2:active polygon, #japans_visje_3:active polygon, #japans_visje_4:active polygon, #japans_visje_5:active polygon, #japans_visje_6:active polygon, #japans_visje_7:active polygon, #japans_visje_8:active polygon, #japans_visje_9:active polygon, #japans_visje_10:active polygon, #japans_visje_11:active polygon, #japans_visje_12:active polygon, #japans_visje_13:active polygon, #japans_visje_14:active polygon {
+    fill: red;
+    transition: ease 2s;
+}
+
+
+@media screen and (max-width: 1200px) {
+    svg {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    svg {
+        width: 80%;
+    }
+    h2{
+        font-size: 18px;
+        transition: ease 1s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
