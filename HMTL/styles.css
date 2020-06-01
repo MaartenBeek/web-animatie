@@ -15,16 +15,48 @@ body {
     background-color: black;
 }
 
+p {
+    position: absolute;
+    color: white;
+    z-index:1;
+    top: 4em;
+    left: 4em;
+    line-height: 1.5em;
+}
+
+p span {
+    font-weight: 600;
+}
+
 section {
-    margin: 6em 2em;
+    padding: 6em 2em;
+    height: 100vh;
+    width: 100vw;
+}
+
+a:hover .water {
+    height: 100%;
+}
+
+#water {
+    width: 100%;
+    height: 0;
+    background-color: deepskyblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    transition: 2s ease;
 }
 
 svg {
+    position: relative;
     margin: auto;
     display: block;
     overflow: visible;
     width: 40%;
     transition: ease 1s;
+    z-index: 1;
 }
 
 h2 {
@@ -45,49 +77,6 @@ svg:hover {
     transform: scale(1.5);
     transform: rotate(360deg);
 */
-}
-
-#amerikaanse_vis:hover {
-    animation-name: rotatejapan;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
-}
-
-@keyframes rotatejapan {
-    0%{
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.5);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
-#amerikaanse_vis:hover .cls-6 {
-    transform-origin: 50% 50%;
-    transform-box: fill-box;
-    fill: white;
-    transition: ease 1s;
-}
-
-#amerikaanse_vis:hover #lichaam .cls-5 {
-    fill: white;
-    transition: ease 1s;
-}
-
-#amerikaanse_vis:hover #oog circle {
-    fill: #d33541;
-    transition: ease 0.5s;
-}
-
-#amerikaanse_vis:hover #oog {
-    fill: #d33541;
-    transition: ease 0.5s;
 }
 
 #amerikaanse_vis {
@@ -198,6 +187,49 @@ svg:hover {
 
 #chinese_vis_2 {
     animation-duration: 2.5s;
+}
+
+#amerikaanse_vis:hover {
+    animation-name: rotatejapan;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes rotatejapan {
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#amerikaanse_vis:hover .cls-6 {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    fill: white;
+    transition: ease 1s;
+}
+
+#amerikaanse_vis:hover #lichaam .cls-5 {
+    fill: white;
+    transition: ease 1s;
+}
+
+#amerikaanse_vis:hover #oog circle {
+    fill: #d33541;
+    transition: ease 0.5s;
+}
+
+#amerikaanse_vis:hover #oog {
+    fill: #d33541;
+    transition: ease 0.5s;
 }
 
 #japans_visje_1:active, #japans_visje_2:active, #japans_visje_3:active, #japans_visje_4:active, #japans_visje_5:active, #japans_visje_6:active, #japans_visje_7:active, #japans_visje_8:active, #japans_visje_9:active, #japans_visje_10:active, #japans_visje_11:active, #japans_visje_12:active, #japans_visje_13:active, #japans_visje_14:active {
