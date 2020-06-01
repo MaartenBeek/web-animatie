@@ -61,7 +61,28 @@ svg {
     transition: ease 1s;
     z-index: 1;
     top: 0; left: 0; bottom: 0; right: 0;
+    animation: wobble 6s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes wobble {
+    0% {
+        transform: rotate(2deg) translateY(10px);
+    }
+    25%{
+        transform: rotate(-2deg) translateY(-10px);
+    }
+    50%{
+        transform: rotate(2deg) translateY(10px);
+    }
+    75%{
+        transform: rotate(-2deg) translateY(-10px);
+    }
+    100%{
+        transform: rotate(2deg) translateY(10px);
+    }
+}
+
 
 h2 {
     color: white;
@@ -85,8 +106,7 @@ svg:hover {
 
 #amerikaanse_vis {
     transition: ease-in;
-    animation-name: swiminright;
-    animation-duration: 2s;
+    animation: swiminright 2s; 
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transform-origin: 50% 50%;
@@ -101,6 +121,8 @@ svg:hover {
         transform: translateX(0px);
     }
 }
+
+
 
 #japans_visje_1, #japans_visje_2, #japans_visje_3, #japans_visje_4, #japans_visje_5, #japans_visje_6, #japans_visje_7, #japans_visje_8, #japans_visje_9, #japans_visje_10, #japans_visje_11, #japans_visje_12, #japans_visje_13, #japans_visje_14 {
     transition: ease-in;
