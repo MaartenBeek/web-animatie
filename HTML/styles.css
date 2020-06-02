@@ -15,13 +15,22 @@ body {
     background-color: black;
 }
 
-p {
+.waterInfo {
     position: absolute;
-    color: white;
-    z-index:1;
     top: 4em;
     left: 4em;
-    line-height: 1.5em;
+    z-index: 1;
+}
+
+.waterInfo h3 {
+    color: white;
+    margin-bottom: 0;
+}
+
+p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 p span {
@@ -58,7 +67,7 @@ svg {
     display: block;
     overflow: visible;
     width: 40%;
-    transition: ease 1s;
+    transition: ease-in 1.2s;
     z-index: 1;
     top: 0; left: 0; bottom: 0; right: 0;
     animation: wobble 6s;
@@ -88,9 +97,10 @@ h2 {
     color: white;
     text-transform:uppercase;
     position: absolute;
-    bottom: 4em;
-    left: 4em;
+    bottom: 2.7em;
+    left: 2.7em;
     transition: ease 1s;
+    margin: 0;
 }
 
 h2 span {
@@ -121,8 +131,6 @@ svg:hover {
         transform: translateX(0px);
     }
 }
-
-
 
 #japans_visje_1, #japans_visje_2, #japans_visje_3, #japans_visje_4, #japans_visje_5, #japans_visje_6, #japans_visje_7, #japans_visje_8, #japans_visje_9, #japans_visje_10, #japans_visje_11, #japans_visje_12, #japans_visje_13, #japans_visje_14 {
     transition: ease-in;
@@ -188,6 +196,24 @@ svg:hover {
 #japans_visje_14 {
     animation-duration: 3.8s;
 }
+
+/*
+.swimLeft {
+    animation: swimLeft;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+}
+
+@keyframes swimLeft {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+*/
 
 #chinese_vis_1, #chinese_vis_2 {
     transition: ease-in;
@@ -258,31 +284,24 @@ svg:hover {
     transition: ease 0.5s;
 }
 
+/*
 #japans_visje_1:active, #japans_visje_2:active, #japans_visje_3:active, #japans_visje_4:active, #japans_visje_5:active, #japans_visje_6:active, #japans_visje_7:active, #japans_visje_8:active, #japans_visje_9:active, #japans_visje_10:active, #japans_visje_11:active, #japans_visje_12:active, #japans_visje_13:active, #japans_visje_14:active {
-    animation-name: pop;
+    animation-name: swimAway;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transform-origin: 50% 50%;
     transform-box: fill-box;
 }
+*/
 
-@keyframes pop {
+@keyframes swimAway {
     0% {
-        transform: scale(1);
-    }
-    98%{
-        transform: scale(1.5);
-        opacity: 1;
+        transform: translateX(0px);
     }
     100% {
-        opacity: 0;
+        transform: translateX(-1400px);
     }
-}
-
-#japans_visje_1:active polygon, #japans_visje_2:active polygon, #japans_visje_3:active polygon, #japans_visje_4:active polygon, #japans_visje_5:active polygon, #japans_visje_6:active polygon, #japans_visje_7:active polygon, #japans_visje_8:active polygon, #japans_visje_9:active polygon, #japans_visje_10:active polygon, #japans_visje_11:active polygon, #japans_visje_12:active polygon, #japans_visje_13:active polygon, #japans_visje_14:active polygon {
-    fill: red;
-    transition: ease 2s;
 }
 
 
