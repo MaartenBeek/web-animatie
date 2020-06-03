@@ -13,6 +13,7 @@ html, body {
 
 body {
     background-color: black;
+    cursor: url(img/hook3.png), auto;
 }
 
 .waterInfo {
@@ -61,6 +62,19 @@ a:hover .water {
     background-size: cover;
 }
 
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 40%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
+    transition: ease 1s;
+    z-index: 0;
+}
+
 svg {
     position: absolute;
     margin: auto;
@@ -68,7 +82,7 @@ svg {
     overflow: visible;
     width: 40%;
     transition: ease-in 1.2s;
-    z-index: 1;
+    z-index: 3;
     top: 0; left: 0; bottom: 0; right: 0;
     animation: wobble 6s;
     animation-iteration-count: infinite;
@@ -107,12 +121,119 @@ h2 span {
     font-weight: 100;
 }
 
-svg:hover {
-/*
-    transform: scale(1.5);
-    transform: rotate(360deg);
-*/
+svg:hover #chinese_vis_1 {
+    animation: swimOn1 2.5s;
+    animation-fill-mode: forwards;
 }
+
+svg:hover #chinese_vis_2 {
+    animation: swimOn1 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes swimOn1 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(1400px);
+    }
+}
+
+svg:hover #amerikaanse_vis {
+    animation: swimOn2 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes swimOn2 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-1600px);
+    }
+}
+
+svg:hover #japans_visje_1 {
+    animation: swimOn3 2s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_2 {
+    animation: swimOn3 2s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_3 {
+    animation: swimOn3 2.1s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_4 {
+    animation: swimOn3 2.1s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_5 {
+    animation: swimOn3 2.2s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_6 {
+    animation: swimOn3 2.2s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_7 {
+    animation: swimOn3 2.3s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_8 {
+    animation: swimOn3 2.3s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_9 {
+    animation: swimOn3 2.4s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_10 {
+    animation: swimOn3 2.4s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_11 {
+    animation: swimOn3 2.5s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_12 {
+    animation: swimOn3 2.5s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_13 {
+    animation: swimOn3 2.6s;
+    animation-fill-mode: forwards;
+}
+
+svg:hover #japans_visje_14 {
+    animation: swimOn3 2.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes swimOn3 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-1600px);
+    }
+}
+
+
 
 #amerikaanse_vis {
     transition: ease-in;
@@ -241,6 +362,7 @@ svg:hover {
     animation-duration: 2.5s;
 }
 
+/*
 #amerikaanse_vis:hover {
     animation-name: rotatejapan;
     animation-duration: 1s;
@@ -283,6 +405,7 @@ svg:hover {
     fill: #d33541;
     transition: ease 0.5s;
 }
+*/
 
 /*
 #japans_visje_1:active, #japans_visje_2:active, #japans_visje_3:active, #japans_visje_4:active, #japans_visje_5:active, #japans_visje_6:active, #japans_visje_7:active, #japans_visje_8:active, #japans_visje_9:active, #japans_visje_10:active, #japans_visje_11:active, #japans_visje_12:active, #japans_visje_13:active, #japans_visje_14:active {
@@ -317,6 +440,10 @@ svg:hover {
     }
     h2{
         font-size: 18px;
+        transition: ease 1s;
+    }
+    #overlay {
+        background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
         transition: ease 1s;
     }
 }
