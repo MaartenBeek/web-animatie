@@ -24,16 +24,6 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-
-
-
-
-
-
-
-
-document.getElementById("japans_visje_14").addEventListener("click", swimAway);
-
-function swimAway() {
-    document.getElementById("japans_visje_14").classList.add("swimLeft");
+function filterFunction() {
+    document.getElementById("body").classList.toggle("filter");
 }
