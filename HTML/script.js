@@ -27,3 +27,15 @@ document.addEventListener('keydown', function (event) {
 function filterFunction() {
     document.getElementById("body").classList.toggle("filter");
 }
+
+function waterFunction() {
+    document.getElementById("water").classList.toggle("water");
+    document.getElementById("styleSVG").classList.toggle("styleSVG");
+}
+
+function sharkFunction() {
+    document.querySelector("#amerikaanse_vis .cls-6").classList.toggle("style1");
+    document.querySelector("#lichaam .cls-5").classList.toggle("style2");
+    document.querySelector("#oog circle").classList.toggle("style3");
+    document.querySelector("#amerikaanse_vis #oog").classList.toggle("style4");
+}
